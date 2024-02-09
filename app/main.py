@@ -14,7 +14,7 @@ app.include_router(portfolio.router)
 app.include_router(student.router)
 app.include_router(health.router)
 
-RabbitConsumerFactory(
-    queue=config('RABBITMQ_QUEUE'), 
-    callback=callback
-).create_consumer()
+# RabbitConsumerFactory(
+#     queue=config('RABBITMQ_QUEUE'), 
+#     callback=callback
+# ).create_consumer()
